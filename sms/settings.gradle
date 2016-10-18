@@ -1,0 +1,10 @@
+rootProject.name = 'sms'
+
+include "web"
+
+include "service"
+
+include "repository"
+
+include "domain"
+

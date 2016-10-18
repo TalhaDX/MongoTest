@@ -1,0 +1,19 @@
+package com;
+
+
+import AnnotationExample.Animal;
+import AnnotationExample.Lion;
+
+import java.util.Date;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Animal lion = new Lion();
+        lion.GetName();
+        lion.GetNumOfLegs();
+        lion.Gender();
+
+    }
+}

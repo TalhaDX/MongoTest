@@ -1,0 +1,61 @@
+package com;
+
+import InheritanceTypeExample.*;
+//import InheritanceTypeExample.ClassA;
+//import InheritanceTypeExample.ClassB;
+//import InheritanceTypeExample.ClassC;
+import MembersTest.PublicClassHuman;
+import MembersTest.PublicClassHumanChild;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Accessing variables in inheritance
+        //---------------------------------------------------------------------------------------------------
+
+//        PublicClassHumanChildOtherPackage otherPackage = new PublicClassHumanChildOtherPackage();
+//
+//        PublicClassHuman classHuman = new PublicClassHuman();
+//
+//        PublicClassHumanChild publicClassHumanChild = new PublicClassHumanChild();
+//
+//        PublicClassHuman pch = new PublicClassHumanChildOtherPackage();
+
+        // you can access all members and methods of otherPackage
+        // because it is in the same package as "main class"
+
+        //classHuman
+        // you can access only public members & methods of classHuman
+        // because it is not in the same package as "main class"
+
+        //publicClassHumanChild
+        // you can access only public members & methods of classHuman
+        // because it is not in the same package as "main class"
+        //---------------------------------------------------------------------------------------------------
+
+
+        // Inheritance type
+        //---------------------------------------------------------------------------------------------------
+
+        // You can only use parent value, but can not modify it.
+        // even if we use super than it only effects within that child
+
+        ClassA a = new ClassA();
+        ClassB b = new ClassB();
+        ClassC c = new ClassC();
+
+        a.display();
+        b.display();
+        c.display();
+
+        System.out.println("a age : "+ a.getAge());
+        System.out.println("b age : "+ b.getAge());
+        System.out.println("c age : "+ c.getAge());
+
+//        b.display();
+
+        //---------------------------------------------------------------------------------------------------
+
+    }
+}

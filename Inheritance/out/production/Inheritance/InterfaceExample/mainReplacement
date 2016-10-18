@@ -1,0 +1,27 @@
+package com;
+
+import InterfaceExample.Crow;
+import InterfaceExample.Elephant;
+import InterfaceExample.Lion;
+import InterfaceExample.Fish;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Lion lion = new Lion(40);
+        Elephant elephant = new Elephant(70);
+        Crow crow = new Crow(3);
+        Fish fish = new Fish(4);
+
+        crow.Eat();
+        lion.Eat();
+        System.out.println("Lion's Class: " + lion.className);
+
+        fish.SetSwimSpeed(20);
+        System.out.println(fish.GetSwimSpeed());
+
+
+
+    }
+}

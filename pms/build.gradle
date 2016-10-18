@@ -1,0 +1,28 @@
+
+subprojects{
+
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+    group 'PrismManagmentSystem'
+    version '1.0'
+
+    ext {
+        springGroup = 'org.springframework'
+        springVersion = '4.3.3.RELEASE'
+    }
+
+    repositories {
+        maven { url "https://repo1.maven.org/maven2" }
+    }
+
+    dependencies {
+        compile (
+            [ "$springGroup:spring-context:$springVersion" ],
+            [ 'org.apache.commons:commons-lang3.3.4']
+        )
+        testCompile (
+                ['junit:junit:4.12'],
+                ['org.mockito:mockito-all:1.10.19']
+        )
+    }
+}

@@ -1,0 +1,25 @@
+subprojects {
+    group 'chawal'
+    version '1.0-SNAPSHOT'
+    apply plugin: 'java'
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile(
+                ['org.apache.commons:commons-lang3:3.4'],
+                ['org.springframework:spring-core:4.3.3.RELEASE'],
+                ['javax.servlet:javax.servlet-api:3.1.0'],
+                ['org.springframework:spring-context:4.3.3.RELEASE'],
+        )
+
+        testCompile(
+                ['junit:junit:4.12'],
+                ['org.mockito:mockito-core:2.1.0-RC.2']
+        )
+    }
+
+}

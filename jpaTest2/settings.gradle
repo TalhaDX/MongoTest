@@ -1,0 +1,8 @@
+rootProject.name = 'jpa'
+
+include 'repository'
+include 'service'
+include 'domain'
+include 'web'
+
+

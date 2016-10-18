@@ -1,0 +1,23 @@
+subprojects {
+    group 'com.quick'
+    version '1.0'
+
+    apply plugin: 'java'
+
+    sourceCompatibility = 1.5
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        compile(
+                ['org.springframework:spring-context:4.3.3.RELEASE']
+        )
+
+        testCompile(
+                ['junit:junit:4.12']
+        )
+    }
+
+}

@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : PrismManagmentSystem:web : projectPrism.war (exploded)">
+    <output-path>$PROJECT_DIR$/out/artifacts/web/exploded/projectPrism.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="web/web/Web Gradle : projectPrism.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="web" />
+          <element id="dir-copy" path="$PROJECT_DIR$/web/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="PrismManagmentSystem-domain-1.0.jar">
+            <element id="module-output" name="domain" />
+            <element id="dir-copy" path="$PROJECT_DIR$/domain/build/resources/main" />
+          </element>
+          <element id="archive" name="PrismManagmentSystem-service-1.0.jar">
+            <element id="module-output" name="service" />
+            <element id="dir-copy" path="$PROJECT_DIR$/service/build/resources/main" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/web/exploded/projectPrism.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

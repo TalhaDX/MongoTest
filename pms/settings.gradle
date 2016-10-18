@@ -1,0 +1,10 @@
+rootProject.name = 'pms'
+
+
+include "web"
+
+include "service"
+
+include "domain"
+
+include "repository"

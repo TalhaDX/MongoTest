@@ -1,0 +1,18 @@
+package com;
+
+import PolymorphismConcepts.Room;
+import PolymorphismConcepts.School;
+import PolymorphismConcepts.Table;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        School school = new School(4, new Room());
+        Table tab = new Table();
+
+        school.AddRoom(new Room());
+
+        //System.out.println("rooms: " + school.GetRooms());
+    }
+}

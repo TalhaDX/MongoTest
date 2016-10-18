@@ -1,0 +1,8 @@
+description """sms-service"""
+
+dependencies {
+
+    compile(
+            project(':repository')
+    )
+}

@@ -1,0 +1,29 @@
+package com;
+
+import CollectionExample.HashmapExample;
+
+public class Main {
+
+    public static void main(String[] args) {
+//
+//        ListExample le = new ListExample();
+//        // --------- Adding --------------
+//        le.AddObject(2);
+//        le.AddObject(3);
+//        le.AddObject(4);
+//
+//        // --------- Getting --------------
+//        le.PrintList();
+//        le.PrintViaIterator();
+//
+//        // --------- Updating --------------
+//        le.SetObject(1,99);
+//        le.PrintList();
+
+        HashmapExample hashmapExample = new HashmapExample();
+        hashmapExample.get();
+        hashmapExample.change("Zaid Hamid");
+        hashmapExample.get();
+
+    }
+}

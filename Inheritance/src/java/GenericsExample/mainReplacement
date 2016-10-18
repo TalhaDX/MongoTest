@@ -1,0 +1,31 @@
+package com;
+
+import GenericsExample.GenericClass;
+import GenericsExample.IGeneric;
+import GenericsExample.ImplementationIGeneric;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        GenericClass<Integer> intG = new GenericClass<Integer>();
+
+        intG.Set(20);
+        System.out.println("intG: " + intG);
+        System.out.println("intG: " + intG.Get());
+
+        GenericClass<String> intS = new GenericClass<String>();
+
+        intS.Set("Talha");
+        System.out.println("intG: " + intS);
+        System.out.println("intG: " + intS.Get());
+
+        ImplementationIGeneric<String, String> impGen = new ImplementationIGeneric<String, String>("Mango", "Man");
+        // Diff bw this above and below line??
+        // This is the real polymorphism and you shall always use it like this way.
+        // Alywas write thee implemented class or interface first,
+//        IGeneric<String, String> impGenPaernt = new ImplementationIGeneric<String, String>("Mango", "Woman");
+        System.out.println("impGen: " + impGen.GetKey());
+        System.out.println("impGen: " + impGen.GetValue());
+    }
+}

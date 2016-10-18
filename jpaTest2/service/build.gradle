@@ -1,0 +1,8 @@
+
+dependencies{
+    compile(
+            project(':domain'),
+            project(':repository'),
+            ['org.springframework.data:spring-data-mongodb:1.8.4.RELEASE']
+    )
+}
