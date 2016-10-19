@@ -1,8 +1,0 @@
-rootProject.name = 'test'
-rootProject.name = 'test'
-
-
-include "repository"
-include "service"
-include "domain"
-include "web"

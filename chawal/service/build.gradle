@@ -1,8 +1,0 @@
-description """chawal-service"""
-
-dependencies{
-
-    compile(
-            project(':repository')
-    )
-}

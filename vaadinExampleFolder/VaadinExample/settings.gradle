@@ -1,4 +1,0 @@
-rootProject.name = 'vaadinExample'
-
-include 'app'
-

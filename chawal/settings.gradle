@@ -1,7 +1,0 @@
-rootProject.name = 'chawal'
-
-include "repository"
-include "domain"
-include "service"
-include "web"
-
