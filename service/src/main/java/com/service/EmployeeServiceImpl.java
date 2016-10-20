@@ -2,6 +2,8 @@ package com.service;
 
 import com.domain.Employee;
 import com.repository.EmployeeRepository;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -25,7 +27,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> findAll() {
-        return null;
+        List<Employee> employeesFromDb = new ArrayList<>();
+        employeeRepository.findAll().forEach(employeesFromDb::add);
+        return employeesFromDb;
     }
 
     @Override
